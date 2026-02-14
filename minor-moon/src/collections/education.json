@@ -1,0 +1,16 @@
+[
+  {
+    "institution": "Drexel University",
+    "degree": "Bachelor of Science in Computer Science",
+    "dates": "June 2024",
+    "gpa": "3.87/4.0",
+    "honors": "Magna Cum Laude",
+    "concentrations": ["Systems and High-Performance Computing", "Computing Systems"],
+    "coursework": [
+      "Probability & Statistics", "Linear Algebra", "Database Systems", "Algorithms", "Data Structures",
+      "Cloud Software Engineering (G)", "IT Security", "Computer Forensics", "Operating Systems",
+      "Computer Networks", "Concurrent Programming"
+    ],
+    "logo": "/assets/images/experiences/drexel.png"
+  }
+]

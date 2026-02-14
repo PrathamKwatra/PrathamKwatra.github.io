@@ -1,0 +1,48 @@
+[
+  {
+    "dates": "July 2024 - Present",
+    "role": "Software Engineer, Full-time",
+    "company": "Susquehanna International Group (SIG)",
+    "description": [
+      "Eliminated critical race conditions in the quote book logic by engineering a custom TCP socket server to emulate the NASDAQ SQF protocol, implementing manual packet framing and buffer management.",
+      "Achieved lock-free concurrency by replacing 4,000+ dictionaries with a transaction queue architecture, removing context-switching overhead and ensuring data consistency for high-frequency updates.",
+      "Enabled large-scale regression testing of 2,000+ live trading instances by designing a 'Safety Mode' system that audits full runtime configurations and captures state snapshots immediately prior to market connection.",
+      "Automated the build and deployment pipeline using TeamCity and Octopus Deploy, integrating the emulator into the daily testing suite to reduce manual QA cycle time by 80%."
+    ],
+    "logo": "/assets/images/experiences/sig.png"
+  },
+  {
+    "dates": "March 2023 - September 2023",
+    "role": "Software Engineer Intern, Monitoring Management",
+    "company": "Susquehanna International Group (SIG)",
+    "description": [
+      "Engineered an end-to-end monitoring and alerting solution (ASP.NET Core, Typescript) to secure and ensure uptime for 6,000+ critical production servers.",
+      "Designed a high-throughput distributed service to ingest and process over 1.25 million log entries per minute, streaming data into a partitioned MS SQL Server for anomaly detection.",
+      "Reduced deadlocks by >90% and tripled throughput by diagnosing Entity Framework's internal MERGE lock contention and refactoring the persistence layer to bypass unnecessary read-verifications.",
+      "Implemented a server-based sharding strategy for log ingestion, ensuring balanced load distribution across database partitions and preventing write-heavy hotspots during market open."
+    ],
+    "logo": "/assets/images/experiences/sig.png"
+  },
+  {
+    "dates": "March 2022 - September 2022",
+    "role": "Software Engineer Intern, Middleware",
+    "company": "Susquehanna International Group (SIG)",
+    "description": [
+      "Mitigated resource leaks and security vulnerabilities by developing a Python and Robot Framework monitoring system to detect and alert on orphaned processes.",
+      "Restored high availability for core trading services by analyzing and resolving a persistent deadlock in a proprietary, low-latency C++ communication system.",
+      "Automated the analysis of process memory dumps to proactively identify memory leaks in long-running C++ trading processes before they caused critical OOM crashes."
+    ],
+    "logo": "/assets/images/experiences/sig.png"
+  },
+  {
+    "dates": "September 2023 - June 2024",
+    "role": "Backend Engineer, Capstone Project",
+    "company": "Drexel University",
+    "description": [
+      "Reverse-engineered Stanford's MOSS plagiarism detection algorithm, analyzing its string-matching and statistical techniques to identify vulnerabilities and inform development of a new tool.",
+      "Engineered a distributed data ingestion pipeline using Traefik and FastAPI to preprocess and queue massive volumes of source code submissions for algorithmic analysis.",
+      "Deployed the analysis engine via Docker containers, ensuring consistent execution environments across distributed compute nodes and enabling horizontal scaling."
+    ],
+    "logo": "/assets/images/experiences/drexel.png"
+  }
+]

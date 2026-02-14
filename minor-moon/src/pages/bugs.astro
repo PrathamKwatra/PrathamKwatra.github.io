@@ -1,0 +1,59 @@
+---
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="Bugs & AI Development">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Bugs & AI"
+      description="Documentation of how this site was built, debugged, and evolved using the Gemini CLI and AI-driven workflows."
+    />
+
+    <div class="relative z-30 w-full my-10 p-8 border border-dashed rounded-xl border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900">
+        <h2 class="text-xl font-bold mb-4 dark:text-neutral-100">The AI Journey</h2>
+        <p class="text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+            This entire CV conversion was performed autonomously by the Gemini CLI agent. From parsing a raw Markdown resume to scaffolding new Astro components, the process was a collaboration between human intent and AI execution.
+        </p>
+    </div>
+
+    <h2 class="mt-10 mb-4 text-2xl font-bold dark:text-neutral-200">Plan & Ask Mode</h2>
+    <p class="text-sm leading-6 text-neutral-600 dark:text-neutral-400 mb-6">
+        Every major change started with a <strong>Plan</strong>. The AI agent would first explore the codebase, then propose a multi-phase implementation strategy. Using <em>Plan Mode</em> ensured that we had a grounded architectural approach before a single line of code was modified.
+    </p>
+
+    <h2 class="mb-4 text-2xl font-bold dark:text-neutral-200">Debugging with Custom Skills</h2>
+    <p class="text-sm leading-6 text-neutral-600 dark:text-neutral-400 mb-6">
+        When the Astro 5 upgrade introduced breaking changes—specifically the removal of the <code>layout</code> field in content collections—the agent utilized specialized investigative tools to root-cause the issue. 
+    </p>
+    <ul class="list-disc list-outside ml-5 space-y-3 text-sm text-neutral-600 dark:text-neutral-400">
+        <li><strong>Breaking Change Detection:</strong> Identifying the shift from implicit layouts to explicit layout wrapping in <code>[slug].astro</code>.</li>
+        <li><strong>Automated Audits:</strong> Running <code>npm audit</code> and <code>npm run build</code> iteratively to catch and fix vulnerabilities and build-time warnings.</li>
+        <li><strong>TypeScript Refinement:</strong> Fixing implicit <code>any</code> types to ensure a zero-warning build output.</li>
+    </ul>
+
+    <h2 class="mt-10 mb-4 text-2xl font-bold dark:text-neutral-200">Evolution</h2>
+    <p class="text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+        What started as a standard template was transformed into a high-performance CV site. The "Bugs" are no longer just errors to be fixed—they are milestones in a new way of building software.
+    </p>
+
+    <h2 class="mt-10 mb-4 text-2xl font-bold dark:text-neutral-200">Let's Connect</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      If you want to discuss AI workflows or check out the code, follow me on <a
+        href="https://www.linkedin.com/in/PrathamKwatra/"
+        target="_blank"
+        class="text-indigo-600 underline">LinkedIn</a
+      >, or shoot me an <a href="mailto:kwatrapratham@gmail.com" class="text-indigo-600 underline"
+        >email</a
+      >.
+    </p>
+
+    <div class="mt-10 pt-10 border-t border-neutral-200 dark:border-neutral-800">
+        <p class="text-xs text-neutral-500 text-center">
+            Built with ✦ Gemini CLI
+        </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import education from "../../collections/education.json";
+import EducationItem from "../education-item.astro";
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <h2
+    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+  >
+    Education
+  </h2>
+  <div class="px-5 py-10">
+    {
+      education.map((item) => {
+        return (
+          <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+            <EducationItem
+              institution={item.institution}
+              degree={item.degree}
+              dates={item.dates}
+              gpa={item.gpa}
+              honors={item.honors}
+              concentrations={item.concentrations}
+              coursework={item.coursework}
+              logo={item.logo}
+            />
+          </div>
+        )
+      })
+    }
+  </div>
+</section>
